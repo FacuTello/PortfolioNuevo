@@ -1,0 +1,259 @@
+﻿
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Mi Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="Estilos/Estilos.css" rel="stylesheet" />
+</head>
+<body>
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark sticky-top">
+                <div class="container position-relative">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse" title="Alternar navegación"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Inicio">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#SobreMi">Sobre Mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Formacion">Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Proyectos">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container vh-100 d-flex flex-column justify-content-center" id="Inicio">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-5 text-center text-md-end">
+                        <img src="Fotos/Foto-CV.jpeg" alt="Foto de Facundo" width="220" class="rounded-circle" />
+                    </div>
+                    <div class="col-12 col-md-7 text-center text-md-start">
+                        <h1 class="inicioNombre">Facundo Tello</h1>
+                        <p class="inicio">Desarrollador .NET</p>
+                        <p class="inicio">Desarrollo aplicaciones web y de escritorio utilizando C# y tecnologías del ecosistema .NET.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container vh-100" id="SobreMi">
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-3">
+                        <h2 class="sobreMiTitulo text-center">Sobre Mí</h2>
+                        <p class="sobreMiTexto mt-4">Siempre me interesaron la tecnología y la lógica, especialmente la posibilidad de construir algo siguiendo un proceso y encontrar soluciones paso a paso.</p>
+                        <p class="sobreMiTexto">Después de haber estudiado Psicología durante tres años, descubrí que mi interés por la programación estaba creciendo cada vez más y decidí orientar mi formación hacia este ámbito. Desde entonces me formo de manera autodidacta en el ecosistema .NET, trabajando principalmente con C#, ASP.NET MVC, Entity Framework y SQL Server.</p>
+                        <p class="sobreMiTexto">Actualmente busco una oportunidad que me permita profundizar mis conocimientos, aprender de un equipo de desarrollo y participar en proyectos reales, aportando mi curiosidad y mis ganas de seguir aprendiendo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="Formacion">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2 class="sobreMiTitulo text-center m-5">Formación</h2>
+                    </div>
+                    <div class="col-10 col-md-8">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-transparent text-white border-secondary">
+                                <strong>Nivel 1 — Fundamentos de Programación con C#</strong>
+                                <br>
+                                <small>Maxi Programa · Lógica, variables, condicionales, ciclos, funciones</small>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white border-secondary">
+                                <strong>Nivel 2 — Programación Orientada a Objetos y WinForms</strong>
+                                <br>
+                                <small>Maxi Programa · POO, clases, herencia, interfaces</small>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white border-secondary">
+                                <strong>Nivel 3 — WebForms .NET Framework 4.8</strong>
+                                <br>
+                                <small>Maxi Programa · Aplicaciones de escritorio, eventos, controles</small>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white border-secondary">
+                                <strong>Nivel 4 — ASP.NET MVC, Entity Framework, Identity, Razor</strong>
+                                <br>
+                                <small>Maxi Programa · Desarrollo web, ORM, autenticación, vistas</small>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white border-secondary">
+                                <strong>Base de Datos — SQL Server</strong>
+                                <br>
+                                <small>Maxi Programa · Modelo relacional, consultas, procedimientos almacenados</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="Proyectos">
+                <div class="row text-center">
+                    <%--Primera card--%>
+                    <div class="col-12">
+                        <h2 class="sobreMiTitulo text-center m-5">Proyectos</h2>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card-modern-dark">
+                            <div class="mockup-frame">
+                                <div class="mockup-bar">
+                                    <span class="mockup-url">tiendaonline.somee.com</span>
+                                    <div style="width: 32px;"></div>
+                                </div>
+                                <div class="mockup-image-wrapper">
+                                    <img src="Fotos/Tienda.png" class="mockup-img" alt="Vidriera Virtual SaaS" />
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <div>
+                                    <h3 class="card-heading">Vidriera Virtual SaaS</h3>
+                                    <p class="card-desc">
+                                        Solución de tienda online con panel de administración y arquitectura multiusuario,
+                                        actualmente utilizada por comercios reales.
+                                    </p>
+                                    <p class="card-desc">
+                                        Cada comercio gestiona su propia tienda de manera independiente.
+                                    </p>
+                                </div>
+                                <div class="tech-section">
+                                    <span class="tech-label">Tecnologías</span>
+                                    <div class="tech-tags">
+                                        <span class="tag">C#</span>
+                                        <span class="tag">ASP .NET Web Forms</span>
+                                        <span class="tag">SQL Server</span>
+                                        <span class="tag">ADO.NET</span>
+                                        <span class="tag">Bootstrap</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer-action">
+                                    <div class="credenciales-box">
+                                        <span>Demo de prueba</span>
+                                        <small>Usuario: <strong>admin</strong> · Contraseña: <strong>tienda</strong></small>
+                                    </div>
+                                    <a href="http://tiendaonline.somee.com/" class="btn-demo" target="_blank" rel="noopener noreferrer">Ver demo ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <%--Segunda Card--%>
+                        <div class="card-modern-dark">
+                            <div class="mockup-frame">
+                                <div class="mockup-bar">
+                                    <div style="width: 32px;"></div>
+                                </div>
+                                <div class="mockup-image-wrapper">
+                                    <video class="mockup-img" autoplay muted loop playsinline>
+                                        <source src="Fotos/VideoTerminado.mp4" type="video/mp4" />
+                                        Tu navegador no soporta videos.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <div>
+                                    <h3 class="card-heading">Kiosco -Sistema de venta y gestión-</h3>
+                                    <p class="card-desc">
+                                        Sistema de gestión para kiosco, actualmente utilizado en un comercio real.
+                                        Permite registrar ventas, almacenar la información en una base de datos.
+                                    </p>
+                                    <p class="card-desc">
+                                        Ademas calcula el total vendido y la ganancia, e imprimir tickets de compra para los clientes.
+                                    </p>
+                                </div>
+                                <div class="tech-section">
+                                    <span class="tech-label">Tecnologías</span>
+                                    <div class="tech-tags">
+                                        <span class="tag">C#</span>
+                                        <span class="tag">ASP .NET Win Forms</span>
+                                        <span class="tag">SQL Server</span>
+                                        <span class="tag">ADO.NET</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer-action">
+                                    <a href="https://github.com/FacuTello/Kiosco" class="btn-demo" target="_blank" rel="noopener noreferrer">Ver GitHub ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-5 d-flex justify-content-center">
+                        <%--Tercera card--%>
+                        <div class="card-modern-dark">
+                            <div class="mockup-frame">
+                                <div class="mockup-bar">
+                                    <div style="width: 32px;"></div>
+                                </div>
+                                <div class="mockup-image-wrapper">
+                                    <img src="Fotos/CrudPokemon.png" class="mockup-img" alt="Crud Pokemon" />
+                                </div>
+                            </div>
+                            <div class="card-details">
+                                <div>
+                                    <h3 class="card-heading">Pokedex MVC Entity Framework</h3>
+                                    <p class="card-desc">
+                                        Proyecto de practica en donde se implementa MVC con Entity Framework
+                                    </p>
+                                    <p class="card-desc">
+                                        con CRUD y persistencia de datos en SQL Server.
+                                    </p>
+                                </div>
+                                <div class="tech-section">
+                                    <span class="tech-label">Tecnologías</span>
+                                    <div class="tech-tags">
+                                        <span class="tag">C#</span>
+                                        <span class="tag">ASP .NET MVC</span>
+                                        <span class="tag">SQL Server</span>
+                                        <span class="tag">Entity Framework</span>
+                                        <span class="tag">Bootstrap</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer-action">
+                                    <a href="https://github.com/FacuTello/PokedexMVC" class="btn-demo" target="_blank" rel="noopener noreferrer">Ver Github ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="Contacto">
+                <div class="col-12">
+                    <h2 class="sobreMiTitulo text-center m-5">Contacto</h2>
+                </div>
+                <div class="col-10 col-md-6 col-lg-4 mx-auto">
+                    <form action="https://formsubmit.co/facundostello@gmail.com" method="post">
+                        <label class="form-label inicio" for="nombre">Tu Nombre:</label>
+                        <input class="form-control" type="text" name="nombre" required>
+
+                        <label class="form-label inicio" for="email">Tu Correo:</label>
+                        <input class="form-control" type="email" name="email" required>
+
+                        <label class="form-label inicio" for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" name="mensaje" rows="4" required></textarea>
+
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio" />
+
+                        <button class="btn btn-primary mt-4 mb-4 w-100" type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   
+</body>
+</html>
